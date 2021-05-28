@@ -6,6 +6,8 @@ import Nav from "./components/Nav.vue";
 import Hero from "./components/Hero.vue";
 import Productos from "./components/Productos.vue";
 import Celulares from "./components/Celulares.vue";
+import BannerInfo from "./components/BannerInfo.vue";
+import TablaPlanes from "./components/TablaPlanes.vue";
 
 const app = createApp(App);
 app.use(router);
@@ -14,4 +16,6 @@ app.component("Nav", Nav);
 app.component("Hero", Hero);
 app.component("Productos", Productos);
 app.component("Celulares", Celulares);
+app.component("BannerInfo", BannerInfo);
+app.component("TablaPlanes", TablaPlanes);
 app.mount("#app");

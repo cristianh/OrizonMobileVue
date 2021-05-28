@@ -7,10 +7,10 @@
 </template>
 <script>
 import ProductosItems from "../components/ProductosHelpPage/ProductosItemsComponent";
-import Img1 from "../assets/imagenes/desk-3076954_1920.jpg";
-import Img2 from "../assets/imagenes/iphone-410324_1920.jpg";
-import Img3 from "../assets/imagenes/ipad-820272_1920.jpg";
-import Img4 from "../assets/imagenes/apple-1841553_1920.jpg";
+import Img1 from "@/assets/imagenes/desk-3076954_1920.jpg";
+import Img2 from "@/assets/imagenes/iphone-410324_1920.jpg";
+import Img3 from "@/assets/imagenes/ipad-820272_1920.jpg";
+import Img4 from "@/assets/imagenes/apple-1841553_1920.jpg";
 import { ref } from "vue";
 export default {
   components: {
@@ -23,28 +23,28 @@ export default {
         texto: "Some text that describes me lorem ipsum ipsum lorem.",
         texto_boton: "Mas información",
         to: "telefonia",
-        img: ref(Img1),
+        img: ref(Img1).value,
       },
       {
         titulo: "Internet",
         texto: "Some text that describes me lorem ipsum ipsum lorem.",
         texto_boton: "Mas información",
         to: "telefonia",
-        img: ref(Img2),
+        img: ref(Img2).value,
       },
       {
         titulo: "Productos",
         texto: "Some text that describes me lorem ipsum ipsum lorem.",
         texto_boton: "Mas información",
         to: "telefonia",
-        img: ref(Img3),
+        img: ref(Img3).value,
       },
       {
         titulo: "Servicios",
         texto: "Some text that describes me lorem ipsum ipsum lorem.",
         texto_boton: "Mas información",
         to: "telefonia",
-        img: ref(Img4),
+        img: ref(Img4).value,
       },
     ];
 

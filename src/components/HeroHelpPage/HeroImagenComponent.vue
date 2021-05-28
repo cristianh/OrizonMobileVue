@@ -31,13 +31,15 @@ export default {
       type: String,
       default: "",
     },
+    imgPocision: {
+      type: String,
+      default: "center",
+    },
   },
   setup(props) {
     const styleObject = ref({
-      backgroundImage:
-        'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("' +
-        props.imgUrl +
-        '")',
+      backgroundImage:'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("' + props.imgUrl +'")',
+      backgroundPosition: props.imgPocision
     });
 
     return { styleObject };
@@ -50,7 +52,6 @@ export default {
   border: white solid 3px;
   width: 100%;
   height: 29pc;
-  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;

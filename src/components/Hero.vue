@@ -2,15 +2,15 @@
   <div>
     <section>
       <div class="container-imagen">
-        <hero-imagen :imgUrl="imagen">
+        <hero-imagen :imgUrl="ImagenHero">
           <template v-slot:titulo>
-            <span>Bienvenido a OrizonMobile</span>
+            <span>{{TextoTitulo}}</span>
           </template>
           <template v-slot:sub-titulo>
-            <span>Descubre lo que tenemos para ti</span>
+            <span>{{TextoSubTitulo}}</span>
           </template>
           <template v-slot:text-button>
-            <span>Mas información</span>
+            <span>{{TextoBoton}}</span>
           </template>
         </hero-imagen>
       </div>
@@ -20,17 +20,28 @@
 
 <script>
 import HeroImagen from "../components/HeroHelpPage/HeroImagenComponent";
-import imglogo from "../assets/imagenes/student-849825_1920.jpg";
-import { ref } from "vue";
 export default {
+  props: {
+    ImagenHero: {
+      type: String,
+      default: "",
+    },
+    TextoTitulo: {
+      type: String,
+      default: "",
+    },
+    TextoSubTitulo: {
+      type: String,
+      default: "",
+    },
+    TextoBoton: {
+      type: String,
+      default: "",
+    },
+  },
   components: {
     HeroImagen,
-  },
-  setup() {
-    const imagen = ref(imglogo);
-
-    return { imagen };
-  },
+  }
 };
 </script>
 

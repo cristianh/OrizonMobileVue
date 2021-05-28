@@ -1,7 +1,7 @@
 <template>
   <div class="nav-bar">
     <div class="topnav">
-      <a href="persona.html">Persona</a>
+      <router-link tag="a" to="/persona">Persona</router-link>
       <a href="empresa.html">Empresa</a>
       <!-- <a href="#nosotros">Nosotros</a> -->
       <div class="dropdown">
@@ -27,7 +27,7 @@
       <span href="javascript:void(0);" class="icon" @click="menuTobble()">
         <i class="fa fa-bars fa-2x"></i>
       </span>
-      <span href="#default" id="logo"
+      <span @click="inicio" id="logo"
         >OrizonMobile<br /><span
           style="font-size: 14px; margin-top: -12px; text-align: center"
           id="logo-subtext"
@@ -69,7 +69,12 @@ export default {
       
     }
 
-    return { menuTobble };
+    function inicio(){
+      //alert('click')
+      //router.push('/')
+    }
+
+    return { menuTobble,inicio };
   },
 };
 </script>
@@ -87,7 +92,7 @@ export default {
 
 /* Estilos para los menus del menu superior */
 
-.topnav a {
+.topnav  router-link a {
   float: left;
   color: white;
   text-align: center;

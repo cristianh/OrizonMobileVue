@@ -28,7 +28,6 @@
 </template>
 <script>
 import { ref } from "vue";
-/* import img1 from "../assets/imagenes/desk-3076954_1920.jpg"; */
 export default {
   props: {
     items: {
