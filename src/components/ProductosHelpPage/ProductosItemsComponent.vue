@@ -67,6 +67,8 @@ export default {
 }
 
 .column-team-index {
+  flex: 0 1 auto;
+  align-self: auto;
   float: left;
   width: 320px;
   margin-bottom: 16px;

@@ -56,7 +56,7 @@ export default {
         img: ref(Img1).value,
       },
       {
-        titulo: "NOKIA",
+        titulo: "LG",
         texto: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum illum
             excepturi odio minus explicabo, dolor maxime hic nam? Eligendi, ab
             eveniet expedita at iure voluptatum quasi dolorum asperiores quae
@@ -66,7 +66,7 @@ export default {
        img: ref(Img2).value,
       },
       {
-        titulo: "NOKIA",
+        titulo: "REALME",
         texto: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum illum
             excepturi odio minus explicabo, dolor maxime hic nam? Eligendi, ab
             eveniet expedita at iure voluptatum quasi dolorum asperiores quae
@@ -76,7 +76,7 @@ export default {
        img: ref(Img3).value,
       },
       {
-        titulo: "NOKIA",
+        titulo: "SONY",
         texto: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum illum
             excepturi odio minus explicabo, dolor maxime hic nam? Eligendi, ab
             eveniet expedita at iure voluptatum quasi dolorum asperiores quae
@@ -86,7 +86,7 @@ export default {
         img: ref(Img4).value,
       },
       {
-        titulo: "NOKIA",
+        titulo: "XIAOMI",
         texto: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum illum
             excepturi odio minus explicabo, dolor maxime hic nam? Eligendi, ab
             eveniet expedita at iure voluptatum quasi dolorum asperiores quae
@@ -96,7 +96,7 @@ export default {
         img: ref(Img5).value,
       },
       {
-        titulo: "NOKIA",
+        titulo: "HUAWEI",
         texto: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum illum
             excepturi odio minus explicabo, dolor maxime hic nam? Eligendi, ab
             eveniet expedita at iure voluptatum quasi dolorum asperiores quae
@@ -106,7 +106,7 @@ export default {
         img: ref(Img6).value,
       },
       {
-        titulo: "NOKIA",
+        titulo: "SAMSUNG",
         texto: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum illum
             excepturi odio minus explicabo, dolor maxime hic nam? Eligendi, ab
             eveniet expedita at iure voluptatum quasi dolorum asperiores quae
@@ -116,7 +116,7 @@ export default {
         img: ref(Img7).value,
       },
       {
-        titulo: "NOKIA",
+        titulo: "APPLE",
         texto: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum illum
             excepturi odio minus explicabo, dolor maxime hic nam? Eligendi, ab
             eveniet expedita at iure voluptatum quasi dolorum asperiores quae
@@ -155,6 +155,8 @@ export default {
   padding: 34px 20px;
   clear: both;
   display: table-cell;
+   flex: 0 1 auto;
+  align-self: auto;
   flex-basis: 22%;
   flex-grow: 2;
 }
