@@ -2,7 +2,7 @@
   <div>
     <section>
       <div class="container-imagen">
-        <hero-imagen :imgUrl="ImagenHero">
+        <hero-imagen :imgUrl="ImagenHero" :ColorBoton="ColorBoton" :AlineacionTexto="AlineacionTexto" :MostrarBoton="MostrarBoton">
           <template v-slot:titulo>
             <span>{{TextoTitulo}}</span>
           </template>
@@ -38,6 +38,21 @@ export default {
       type: String,
       default: "",
     },
+    ColorBoton:{
+       type: String,
+      default: "#91aa9d",
+    },
+    AlineacionTexto:{
+      type: String,
+      validator: function (value) {
+        return ["center", "left", "right"].indexOf(value) !== -1;
+      },
+      default:"left"
+    },
+    MostrarBoton: {
+      type: Boolean,
+      default: true,
+    },
   },
   components: {
     HeroImagen,
@@ -45,7 +60,11 @@ export default {
 };
 </script>
 
-<style lang="less">
+<style scope>
+.container-image{
+  width: 100%;
+}
+
 .container-imagen button:hover {
   background-color: #d1dbbd;
 }
@@ -56,7 +75,6 @@ export default {
   display: inline-block;
   padding: 8px;
   color: white;
-  background-color: #91aa9d;
   text-align: center;
   cursor: pointer;
   width: 45%;
